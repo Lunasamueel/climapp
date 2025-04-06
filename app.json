@@ -5,9 +5,11 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "climapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "jsEngine": "hermes",
+    
     "ios": {
       "supportsTablet": true
     },
@@ -32,10 +34,12 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "newArchEnabled": true
     }
   }
 }
