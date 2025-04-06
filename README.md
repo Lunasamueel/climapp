@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# 🌦️ App de Clima - React Native + Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo mobile desenvolvido com **React Native** e **Expo**, que permite ao usuário buscar e visualizar informações climáticas detalhadas de qualquer cidade do mundo, de forma simples e intuitiva.
 
-## Get started
+## 📱 Funcionalidades
 
-1. Install dependencies
+- **Tela Inicial** com uma interface amigável e limpa.
+- **Barra de pesquisa dinâmica**, onde o usuário pode digitar o nome da cidade desejada.
+- **Consulta à API OpenWeatherMap** em tempo real.
+- **Exibição de dados detalhados do clima**, como:
+  - Temperatura atual
+  - Sensação térmica
+  - Clima (ensolarado, nublado, etc.)
+  - Umidade
+  - Velocidade do vento
+  - Localização (nome da cidade e país)
+- Interface em **português** com temperaturas em **graus Celsius**.
 
-   ```bash
-   npm install
-   ```
+## 🔧 Tecnologias Utilizadas
 
-2. Start the app
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [Axios](https://axios-http.com/) para requisições HTTP
+- [OpenWeatherMap API](https://openweathermap.org/api) para dados climáticos
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 📦 Instalação e Execução
 
 ```bash
-npm run reset-project
-```
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repo.git
+cd seu-repo
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Instale as dependências
+npm install
+# ou
+yarn
+🔑 Configuração da API
+Adicione sua chave da API do OpenWeatherMap no app.config.js ou arquivo .env, dependendo de como estiver configurado seu projeto:
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+js
+Copiar
+Editar
+extra: {
+  API_KEY: "SUA_CHAVE_AQUI"
+}
+▶️ Executar o app
+bash
+Copiar
+Editar
+npx expo start
+Abra o app no seu dispositivo físico com o Expo Go ou em um emulador Android/iOS.
